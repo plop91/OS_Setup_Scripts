@@ -1,0 +1,22 @@
+# Search history with commands matching current
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+"\e[1;5C": forward-word
+"\e[1;5D": backward-word
+"\e[5C": forward-word
+"\e[5D": backward-word
+"\e\e[C": forward-word
+"\e\e[D": backward-word
+
+# do not bell on tab-completion
+#set bell-style none
+
+set meta-flag on
+set input-meta on
+set convert-meta off
+set output-meta on
+
+# Completed names which are symbolic links to
+# directories have a slash appended.
+set mark-symlinked-directories on
